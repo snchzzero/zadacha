@@ -7,9 +7,6 @@ def check(x):
             l1.extend(x[:l0.index(True)])
             l1.extend(x[l0.index(True)])
             l1.extend(x[l0.index(True)+1:])
-            # l1.extend(x[l0.index(True)])
-            # x = x[:l0.index(True)] + x[l0.index(True)+1:]
-            # l1.extend(x)
             l0 = list(isinstance(i, list) for i in l1)
             x = l1.copy()
     else:
